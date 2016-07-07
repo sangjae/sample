@@ -6,6 +6,26 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상태"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button1" />
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +37,7 @@
             android:layout_height="wrap_content"
             android:text="사용처"
             android:textSize="15dp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,6 +62,7 @@
             android:gravity="right"
             android:hint="금액적어줘요" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,11 +74,13 @@
             android:layout_height="wrap_content"
             android:text="사용일자"
             android:textSize="15dp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2016-07-05" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,11 +92,13 @@
             android:layout_height="wrap_content"
             android:text="적요(메모)"
             android:textSize="15dp" />
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="메모적어주세요."/>
+            android:hint="메모적어주세요." />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,13 +111,14 @@
             android:text="계정"
             android:textSize="15dp" />
 
-        <Spinner
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/select_account"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/account">
-        </Spinner>
+            android:text="계정선택된거" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

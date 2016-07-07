@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="account">
+        <item>복리후생비</item>
+        <item>계정2</item>
+        <item>계정3</item>
+        <item>계정4</item>
+        <item>계정5</item>
+    </string-array>
+
+
+</resources>
