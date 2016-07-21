@@ -6,6 +6,13 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_layout"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,6 +27,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/edit_place"
             android:hint="내용내용" />
     </LinearLayout>
 
@@ -39,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:id="@+id/edit_price"
             android:hint="금액적어줘요" />
     </LinearLayout>
     <LinearLayout
@@ -55,7 +64,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2016-07-05" />
+            android:id="@+id/select_day"
+            android:text="날짜를 입력해주세요" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,6 +81,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/edit_memo"
             android:hint="메모적어주세요."/>
     </LinearLayout>
     <LinearLayout
@@ -92,6 +103,11 @@
         </Spinner>
 
     </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:text="저장"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,6 +126,5 @@
             android:src="@drawable/x_image" />
 
     </LinearLayout>
-
 
 </LinearLayout>
