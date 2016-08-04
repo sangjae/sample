@@ -7,6 +7,9 @@
     <string name="title_management">경비관리</string>
     <string name="title_add">경비신청</string>
     <string name="title_detail">상세보기</string>
+    
+    <string name="common_text_error">오류</string>
+    <string name="common_text_confirm">확인</string>
 
 
 </resources>

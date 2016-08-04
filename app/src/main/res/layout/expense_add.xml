@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="10dp">
+    android:scrollbars="vertical"
+    >
 
     <include
         android:layout_width="match_parent"
@@ -99,15 +99,19 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/account">
+            android:id="@+id/add_spinner"
+
+            >
         </Spinner>
 
     </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_save"
         android:text="저장"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
