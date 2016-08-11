@@ -7,10 +7,24 @@
     android:scrollbars="vertical"
     >
 
-    <include
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/toolbar_layout"/>
+        android:layout_height="wrap_content">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_layout"/>
+        <ImageView
+            android:id="@+id/iv_RightButton"
+            android:onClick="toolbarRightButtonClick"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
 
 
     <LinearLayout

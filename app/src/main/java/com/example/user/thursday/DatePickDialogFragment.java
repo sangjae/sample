@@ -35,8 +35,11 @@ public class DatePickDialogFragment extends DialogFragment implements DatePicker
         TextView selectDay = (TextView) getActivity().findViewById(R.id.select_day);
         int monthOfyear = month+1;
 
-        String stingOfDate = year+"-"+monthOfyear+"-"+day;
-        selectDay.setText(stingOfDate);
+
+        String msg = String.format("%d - %d - %d", year, monthOfyear, day);
+        String msg1 = String.format("%04d%02d%2d", year, monthOfyear, day);
+        selectDay.setText(msg);
+        selectDay.setTag(msg1);
     }
 
 
